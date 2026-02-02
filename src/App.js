@@ -1,12 +1,10 @@
 // import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter } from "react-router-dom";
+import Body from "./components/Body";
+
 
 function App() {
-  return (
-    <div className="text-3xl font-bold text-green-800">
-      Let's create Netflix Gpt
-    </div>
-  );
+  return <Body />;
 }
 
 export default App;
