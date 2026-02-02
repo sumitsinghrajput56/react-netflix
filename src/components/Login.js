@@ -1,15 +1,55 @@
-import React from 'react'
-import Header from './Header'
+import React, { useState } from "react";
+import Header from "./Header";
 
 const Login = () => {
+  const [isSignInForm, setIsSignInForm] = useState(true);
+
+  const toggleSignInForm = () => {
+    setIsSignInForm(!isSignInForm);
+  };
+
   return (
     <div>
-        <Header />
-        <div>
-            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/cc73e7c7-7860-4ef4-8fc8-1baf24569d2f/web/IN-en-20260126-TRIFECTA-perspective_90d714e8-acc9-4253-ab46-ca6b349c1989_large.jpg" alt="netflix-logo" />
-        </div>
-    </div>
-  )
-}
+      <Header />
+      <div className="absolute">
+        <img
+          src="https://assets.nflxext.com/ffe/siteui/vlv3/cc73e7c7-7860-4ef4-8fc8-1baf24569d2f/web/IN-en-20260126-TRIFECTA-perspective_90d714e8-acc9-4253-ab46-ca6b349c1989_large.jpg"
+          alt="netflix-logo"
+        />
+      </div>
+      <form className="w-5/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
+        <h1 className="font-bold text-3xl py-4">
+          {isSignInForm ? "Sign In" : "Sign Up"}
+        </h1>
+        {isSignInForm && (
+          <input
+            type="text"
+            placeholder="Name"
+            className="p-4 my-4 w-full bg-gray-700"
+          />
+        )}
 
-export default Login
+        <input
+          type="email"
+          placeholder="Email Address"
+          className="p-4 my-4 w-full bg-gray-700"
+        />
+        <input
+          type="Password"
+          placeholder="Password"
+          className="p-4 my-4 w-full bg-gray-700"
+        />
+        <button className="p-4 my-6 bg-red-700 w-full rounded-lg">
+          {isSignInForm ? "Sign In" : "Sign Up"}
+        </button>
+        <p className="py-4 cursor-pointer" onClick={toggleSignInForm}>
+          {isSignInForm
+            ? "How To Nwtflix? Sign Up Now"
+            : "Alredy registered? Sign In Now..."}
+        </p>
+      </form>
+    </div>
+  );
+};
+
+export default Login;
