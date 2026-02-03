@@ -3,8 +3,14 @@
 -Create React App
 -Configured Tailwind
 -Header
+-routing
 -Login Form
 -Sign-Up form
+-form validation
+-useRef hook
+-firebase setup
+-deploying our app
+-Create Sign Up user Account
 
 #features
 -Login/Sign up
