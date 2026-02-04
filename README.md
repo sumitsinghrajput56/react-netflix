@@ -9,8 +9,13 @@
 -form validation
 -useRef hook
 -firebase setup
--deploying our app
--Create Sign Up user Account
+-deploying our app to production
+-Create SignUp user Account
+-Implement Sign in user api
+-Created Redux store with userSlice
+-implemented sign out
+-update profile
+-feth from tmdb movies
 
 #features
 -Login/Sign up
