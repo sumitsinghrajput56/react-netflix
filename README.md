@@ -16,6 +16,12 @@
 -implemented sign out
 -update profile
 -feth from tmdb movies
+-Bug fix:- sign up user displayName and profile picture update
+-Bug fix:- if the user is not logged in Redirect/browse to login page and vice-versa
+-unsubscibed to the onAuthStateChanged callback
+-add hardcoded values to the  constants file.
+-register tmdb api and create an app and get access token
+-get data from tmdb now playing movie list
 
 #features
 -Login/Sign up

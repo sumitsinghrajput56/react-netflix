@@ -1,0 +1,11 @@
+export const LOGO = "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production_2026-01-09/consent/87b6a5c0-0104-4e96-a291-092c11350111/019ae4b5-d8fb-7693-90ba-7a61d24a8837/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png";
+
+export const USER_AVATAR = "https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png";
+
+export const API_OPTIONS = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwOTg0MTQzZjg3ZDlhNDViZTFiZTc2YTY2YThlMGIyOCIsIm5iZiI6MTc1MDUwNTY2My43MzYsInN1YiI6IjY4NTY5OGJmZGQ4MDk1OGUzMTQ5MmU1YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.8oPAeJvlDZ40oCtJb2xUfmPVFfcqbKZ3o5zX-Lz7lZI'
+  }
+};
