@@ -13,7 +13,7 @@ const SecondaryContainer = () => {
           <MovieList title={"Trending"} movies={movies.nowPlayingMovies} />
           <MovieList title={"Popular"} movies={movies.popularMovies} />
           <MovieList title={"Upcoming Movies"} movies={movies.nowPlayingMovies} />
-          <MovieList title={"Horroe"} movies={movies.nowPlayingMovies} />
+          <MovieList title={"Horror"} movies={movies.nowPlayingMovies} />
           {/*
       MovieList - popular
         MovieCard * n
